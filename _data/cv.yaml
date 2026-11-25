@@ -33,7 +33,7 @@ cv:
     Professional Experience:
     - company: Arkansas State University
       position: Assistant Professor, Department of Psychology and Counseling
-      start_date: 2024-08
+      start_date: '2024'
       end_date: present
       location: Jonesboro, AR
     Education:
@@ -66,7 +66,7 @@ cv:
       end_date: '2013'
       location: Elon, NC
     Research Funding:
-    - name: Provost's Challenge Research Seed Fund (PI), Arkansas State University
+    - name: "**Provost's Challenge Research Seed Fund (PI)**, Arkansas State University"
       start_date: '2024'
       end_date: present
       summary: '*Innovations in Reading Research: Eye-Tracking and Brain Imaging Solutions for Struggling Readers*. $60,000.'
@@ -96,7 +96,7 @@ cv:
     - bullet: 'Hollander, J., Sanders, Z., Johnson, A., & Huette, S. (Under review). Instrumentle: A game based measurement of auditory pattern recognition using popular music. Under review in *Music Perception*.'
     - bullet: Hollander, J., Henson, B., Jackson, J., & Huette, S. (Under review). Spoken brand discourse features and audience engagement on TikTok. Under review in *Discourse Processes*.
     Teaching Experience:
-    - name: Assistant Professor, Arkansas State University
+    - name: '**Assistant Professor**, Arkansas State University'
       start_date: '2024'
       end_date: present
       highlights:
@@ -107,10 +107,10 @@ cv:
       - Learning Processes
       - Psychology of Language Seminar
       - Foundations in Cognitive Psychology (graduate)
-    - name: Instructor of Record, University of Memphis
+    - name: '**Instructor of Record**, University of Memphis'
       highlights:
       - Research Methods and Statistics I (PSYC 3010)
-    - name: Graduate Teaching Assistant, University of North Carolina Wilmington
+    - name: '**Graduate Teaching Assistant**, University of North Carolina Wilmington'
       highlights:
       - Research Methods and Statistics for Social Sciences
     Prizes, Awards, and Honors:
@@ -243,14 +243,41 @@ design:
     font_family: Source Sans 3
     alignment: left
   header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.4cm
+    space_below_connections: 0.5cm
     connections:
-      show_icons: false
+      show_icons: true
+      display_urls_instead_of_usernames: false
+  section_titles:
+    space_above: 0.45cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.35em
+  entries:
+    allow_page_break: true
+    date_and_location_width: 3.2cm
+  templates:
+    # Years only (no months) everywhere dates appear.
+    single_date: YEAR
+    top_note: '*Last updated MONTH_NAME YEAR*'
+    # Award, funding and teaching titles are plain text; add **bold** in the
+    # entry itself where you want it.
+    normal_entry:
+      main_column: |-
+        NAME
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
 locale:
   language: english
 settings:
   bold_keywords:
-  - Hollander, J. M.
-  - Hollander, J.
+  # Bolds your name in every citation (the trailing period stays unbolded).
+  - Hollander, J
   pdf_title: John M. Hollander - CV
   render_command:
     output_folder: ../rendercv_output
