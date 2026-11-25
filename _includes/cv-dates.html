@@ -1,0 +1,2 @@
+{%- assign e = include.entry -%}
+{%- if e.date -%}{{ e.date | slice: 0, 4 }}{%- elsif e.start_date -%}{{ e.start_date | slice: 0, 4 }}{% if e.end_date %}&ndash;{% if e.end_date == "present" %}present{% else %}{{ e.end_date | slice: 0, 4 }}{% endif %}{% endif %}{%- endif -%}

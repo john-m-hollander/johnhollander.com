@@ -1,0 +1,45 @@
+{%- comment -%}
+  schema.org structured data describing John as a Person. Google uses this
+  (with the sameAs profile links) to connect the site to the same person on
+  ORCID, Google Scholar, etc. It is the main on-site Knowledge Panel signal.
+  Add new profiles (LinkedIn, Wikidata, university page) to sameAs below.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "url": "{{ site.url }}/",
+  "mainEntity": {
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "John M. Hollander",
+    "alternateName": "John Hollander",
+    "givenName": "John",
+    "familyName": "Hollander",
+    "url": "{{ site.url }}/",
+    "image": "{{ site.url }}/images/headshot.jpg",
+    "email": "mailto:{{ site.author.email }}",
+    "jobTitle": "Assistant Professor of Psychology",
+    "description": {{ site.description | jsonify }},
+    "worksFor": {
+      "@type": "CollegeOrUniversity",
+      "name": "Arkansas State University",
+      "url": "https://www.astate.edu/",
+      "department": {"@type": "Organization", "name": "Department of Psychology and Counseling"}
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "University of Memphis"},
+      {"@type": "CollegeOrUniversity", "name": "University of North Carolina Wilmington"},
+      {"@type": "CollegeOrUniversity", "name": "Elon University"}
+    ],
+    "knowsAbout": ["Cognitive science", "Psychology of language", "Semantic representation", "Embodied cognition", "Reading and literacy", "Intelligent tutoring systems", "Educational technology", "Eye tracking"],
+    "identifier": {"@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-3270-7495"},
+    "sameAs": [
+      "https://orcid.org/0000-0002-3270-7495",
+      "https://scholar.google.com/citations?user=gqDekX4AAAAJ",
+      "https://www.researchgate.net/profile/John-Hollander",
+      "https://github.com/john-m-hollander"
+    ]
+  }
+}
+</script>
