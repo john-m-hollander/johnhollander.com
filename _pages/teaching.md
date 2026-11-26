@@ -9,4 +9,4 @@ redirect_from:
   - /experimental-psych/
 ---
 
-{% include cv-section.html name="Teaching Experience" %}
+{% include cv-section.html name="teaching" %}

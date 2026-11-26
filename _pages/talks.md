@@ -6,5 +6,5 @@ description: "Conference presentations, posters, and invited talks by John M. Ho
 author_profile: true
 ---
 
-{% include cv-section.html name="Invited Talks, Trainings, and Workshops" heading=true %}
-{% include cv-section.html name="Conference Presentations and Posters" heading=true %}
+{% include cv-section.html name="invited_talks" heading=true %}
+{% include cv-section.html name="presentations" heading=true %}

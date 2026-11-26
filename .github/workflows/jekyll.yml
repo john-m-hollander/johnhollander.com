@@ -32,10 +32,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install RenderCV
-        run: pip install "rendercv[full]==2.8"
+        run: pip install "rendercv[full]==2.8" pyyaml
       - name: Build CV PDF
-        # Writes files/Hollander_CV.pdf (paths are set in _data/cv.yaml).
-        run: rendercv render _data/cv.yaml
+        # Combines _data/cv.yaml + cv/rendercv-design.yaml and writes files/Hollander_CV.pdf.
+        run: python cv/build_cv.py
       - name: Save CV PDF as a run artifact
         uses: actions/upload-artifact@v4
         with:

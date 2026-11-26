@@ -1,0 +1,57 @@
+# PDF look and build settings for RenderCV (rarely needs editing).
+# The CV content itself lives in _data/cv.yaml.
+design:
+  theme: classic
+  page:
+    size: us-letter
+    top_margin: 0.7in
+    bottom_margin: 0.7in
+    left_margin: 0.8in
+    right_margin: 0.8in
+  colors:
+    name: rgb(0, 0, 0)
+    headline: rgb(60, 60, 60)
+    connections: rgb(60, 60, 60)
+    section_titles: rgb(0, 0, 0)
+    links: rgb(0, 51, 102)
+  typography:
+    font_family: Source Sans 3
+    alignment: left
+  header:
+    space_below_name: 0.4cm
+    space_below_headline: 0.4cm
+    space_below_connections: 0.5cm
+    connections:
+      show_icons: true
+      display_urls_instead_of_usernames: false
+  section_titles:
+    space_above: 0.45cm
+    space_below: 0.25cm
+  sections:
+    space_between_regular_entries: 0.6em
+    space_between_text_based_entries: 0.35em
+  entries:
+    allow_page_break: true
+    date_and_location_width: 3.2cm
+  templates:
+    # Years only (no months) everywhere dates appear.
+    single_date: YEAR
+    top_note: '*Last updated MONTH_NAME YEAR*'
+    # Award, funding and teaching titles are plain text; add **bold** in the
+    # entry itself where you want it.
+    normal_entry:
+      main_column: |-
+        NAME
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: |-
+        LOCATION
+        DATE
+locale:
+  language: english
+settings:
+  bold_keywords:
+  # Bolds your name in every citation (the trailing period stays unbolded).
+  - Hollander, J
+  pdf_title: John M. Hollander - CV
+  # Output paths are set by cv/build_cv.py.

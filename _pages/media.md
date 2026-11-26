@@ -25,4 +25,4 @@ Interview with the Coalition for Adult Basic Education, 2021.
 <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/474--9qVCAA" title="Meet the Author interview, COABE 2021" loading="lazy" allowfullscreen></iframe></div>
 
 ## In print
-{% include cv-section.html name="Press and Media" %}
+{% include cv-section.html name="press" %}

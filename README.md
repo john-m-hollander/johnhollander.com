@@ -6,27 +6,24 @@ template and hosted on GitHub Pages. The CV PDF is typeset by [RenderCV](https:/
 
 ## Updating your CV (the everyday task)
 
-Everything on your CV lives in one file: **`_data/cv.yaml`**.
+All CV content lives in **`_data/cv.yaml`**. Update it either way:
 
-1. Open `_data/cv.yaml` on GitHub and click the pencil icon (or edit it locally).
-2. Add the new item at the **top** of the right section. Copy the line above it as a pattern, for example:
-   ```yaml
-   Refereed Journal Articles:
-   - reversed_number: Hollander, J., & Coauthor, A. (2027). Title of the paper. *Journal Name*, 1(2), 3-4.
-   ```
-3. Add one line to `cv/CHANGELOG.md` (your CV journal), e.g. `- 2027-01-15: Added Journal Name paper.`
-4. Commit. About two minutes later the site is updated, including:
-   - the PDF at **https://johnhollander.com/files/Hollander_CV.pdf**
-   - the pages **/cv/**, **/publications/**, **/talks/** and **/teaching/**, which read the same file.
+- **Form editor (easiest):** sign in at **https://app.pagescms.org** with GitHub, open this repo, choose **CV**.
+- **Edit the file:** open `_data/cv.yaml` on GitHub, click the pencil, paste an example from
+  **[cv/CHEATSHEET.md](cv/CHEATSHEET.md)** at the top of the right section, and commit.
 
-Formatting tips:
-- `*italics*`, `**bold**`, `[link text](https://...)` work everywhere.
-- `Hollander, J.` is bolded automatically on both the PDF and the website.
-- Section names are free text; sections appear in the order they're listed.
-- If a build fails (red ✗ on the commit), it's almost always a YAML indentation problem or a stray `:` in
-  an entry. Put the whole entry in quotes to fix a colon problem.
-- Each build also attaches the PDF to the run under **Actions** > latest run > *Artifacts*, so every past
-  version of your CV is downloadable.
+About two minutes after a save, the site updates: the PDF at
+**https://johnhollander.com/files/Hollander_CV.pdf** and the pages /cv/, /publications/, /talks/ and /teaching/.
+Each build also keeps the PDF under **Actions** > run > *Artifacts*. Jot a line in `cv/CHANGELOG.md` (your CV
+journal) when you make a notable change.
+
+| File | What it holds |
+|---|---|
+| `_data/cv.yaml` | CV content (the file you edit) |
+| `_data/cv_titles.yml` | Section headings and their order |
+| `cv/rendercv-design.yaml` | PDF fonts, margins, spacing |
+| `cv/build_cv.py` | Builds the PDF (`python cv/build_cv.py`) |
+| `.pages.yml` | The Pages CMS form layout |
 
 ## Other content
 
@@ -45,8 +42,8 @@ Formatting tips:
 ```bash
 bundle install
 bundle exec jekyll serve          # http://localhost:4000
-pip install "rendercv[full]"
-rendercv render _data/cv.yaml     # writes files/Hollander_CV.pdf
+pip install "rendercv[full]" pyyaml
+python cv/build_cv.py             # writes files/Hollander_CV.pdf
 ```
 
 ## How it's built

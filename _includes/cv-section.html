@@ -1,10 +1,12 @@
 {%- comment -%}
   Renders one section of _data/cv.yaml (the same file that builds the PDF).
-  Usage: {% include cv-section.html name="Refereed Journal Articles" heading=true %}
+  Usage: {% include cv-section.html name="journal_articles" heading=true %}
+  (name is the key in _data/cv.yaml; its heading comes from _data/cv_titles.yml)
 {%- endcomment -%}
 {%- assign entries = site.data.cv.cv.sections[include.name] -%}
+{%- assign section_title = site.data.cv_titles[include.name] | default: include.name -%}
 {%- if entries and entries.size > 0 -%}
-{%- if include.heading -%}<h2 id="{{ include.name | slugify }}">{{ include.name }}</h2>{%- endif -%}
+{%- if include.heading -%}<h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>{%- endif -%}
 {%- assign first = entries[0] -%}
 {%- if first.reversed_number -%}
 <ol class="cv-list" reversed>
