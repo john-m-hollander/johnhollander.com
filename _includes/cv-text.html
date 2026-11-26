@@ -1,0 +1,4 @@
+{%- comment -%}Render one CV string: auto-bold the author's name, then Markdown.{%- endcomment -%}
+{%- assign t = include.text | replace: "Hollander, J. M.", "**Hollander, J. M.**" -%}
+{%- unless t contains "**Hollander, J. M.**" -%}{%- assign t = t | replace: "Hollander, J.", "**Hollander, J.**" -%}{%- endunless -%}
+{{- t | markdownify | remove: "<p>" | remove: "</p>" | strip -}}

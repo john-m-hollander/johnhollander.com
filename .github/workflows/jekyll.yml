@@ -1,0 +1,90 @@
+# Builds the CV PDF from _data/cv.yaml, builds the Jekyll site, and deploys
+# it to GitHub Pages on every push to main.
+# On pull requests it builds everything (so mistakes are caught) and attaches
+# the CV PDF to the run as a downloadable artifact, but does not deploy.
+name: Build CV and deploy site
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # ---- CV PDF -----------------------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install RenderCV
+        run: pip install "rendercv[full]==2.8" pyyaml
+      - name: Build CV PDF
+        # Combines _data/cv.yaml + cv/rendercv-design.yaml and writes files/Hollander_CV.pdf.
+        run: python cv/build_cv.py
+      - name: Save CV PDF as a run artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Hollander_CV
+          path: files/Hollander_CV.pdf
+
+      # ---- Website ----------------------------------------------------------
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Minify JS
+        run: |
+          npm install -g uglify-js
+          uglifyjs assets/js/plugins/jquery.greedy-navigation.js assets/js/_main.js assets/js/theme.js -c -m -o assets/js/main.min.js
+      - name: Configure GitHub Pages
+        id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
+      - name: Build with Jekyll
+        # Until the custom domain is switched on in Settings > Pages, the site is
+        # served from john-m-hollander.github.io/johnhollander.com, so take the
+        # real address from GitHub Pages instead of hard-coding it.
+        run: |
+          if [ -n "${{ steps.pages.outputs.origin }}" ]; then
+            echo "url: ${{ steps.pages.outputs.origin }}" > _config.ci.yml
+          else
+            echo "" > _config.ci.yml
+          fi
+          bundle exec jekyll build --config _config.yml,_config.ci.yml --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+      - name: Upload site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

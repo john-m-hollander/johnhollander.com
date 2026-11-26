@@ -1,0 +1,48 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar"
+;
+/* CV pages rendered from _data/cv.yaml */
+.cv-list { margin-bottom: 1.5em; }
+.cv-list li { margin-bottom: 0.5em; line-height: 1.45; }
+.cv-oneline { list-style: none; padding-left: 0; margin-left: 0; }
+.cv-entries { margin-bottom: 1.5em; }
+.cv-entry { margin-bottom: 0.9em; }
+.cv-entry__head { display: flex; justify-content: space-between; gap: 1em; flex-wrap: wrap; }
+.cv-entry__date { white-space: nowrap; color: var(--global-text-color-light, #666); }
+.cv-entry ul { margin-top: 0.25em; margin-bottom: 0; }
+.cv-download { display: inline-block; margin: 0.5em 0 1.5em; }

@@ -1,0 +1,8 @@
+# CV journal
+
+One line per update, newest first. Git keeps the full history of every change;
+this file is the human-readable timeline (handy for annual reviews and tenure files).
+
+- 2026-11-25: Moved CV from Word/Google Drive into `_data/cv.yaml`. Professional references removed.
+- 2026-11-25: Removed the Arkansas State University - Newport invited talk.
+- 2026-11-25: PDF layout fixes: lists now flow across pages, name bolded in citations, year-only dates.

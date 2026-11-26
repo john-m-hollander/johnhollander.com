@@ -1,0 +1,16 @@
+# Display titles for the CV sections in _data/cv.yaml, in the order they appear.
+# To add a section: add a key here and the same key under cv.sections in _data/cv.yaml
+# (and in .pages.yml if you want a form for it).
+experience: "Professional Experience"
+education: "Education"
+research_funding: "Research Funding"
+journal_articles: "Refereed Journal Articles"
+conference_publications: "Refereed Conference Publications"
+manuscripts: "Manuscripts Under Review and In Preparation"
+teaching: "Teaching Experience"
+awards: "Prizes, Awards, and Honors"
+presentations: "Conference Presentations and Posters"
+invited_talks: "Invited Talks, Trainings, and Workshops"
+service: "Service and Professional Activities"
+skills: "Technical Skills"
+press: "Press and Media"

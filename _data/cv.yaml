@@ -1,0 +1,213 @@
+# John M. Hollander - CV content. THIS is the file to edit.
+# Easiest: edit it with the form at https://app.pagescms.org
+# By hand: copy an example from cv/CHEATSHEET.md and paste it at the top of the right section.
+# Every saved change rebuilds files/Hollander_CV.pdf and the CV pages on the website.
+cv:
+  name: John M. Hollander
+  headline: Assistant Professor of Psychology, Arkansas State University
+  location: Jonesboro, AR
+  email: john.m.hollander@gmail.com
+  website: https://johnhollander.com/
+  social_networks:
+  - network: ORCID
+    username: 0000-0002-3270-7495
+  - network: Google Scholar
+    username: gqDekX4AAAAJ
+  - network: GitHub
+    username: john-m-hollander
+  sections:
+    experience:
+    - company: Arkansas State University
+      position: Assistant Professor, Department of Psychology and Counseling
+      start_date: '2024'
+      end_date: present
+      location: Jonesboro, AR
+    education:
+    - institution: University of Memphis
+      area: Experimental Psychology
+      degree: PhD
+      start_date: '2018'
+      end_date: '2024'
+      location: Memphis, TN
+      highlights:
+      - Cognitive Science Graduate Certificate
+    - institution: University of North Carolina Wilmington
+      area: Psychological Science
+      degree: MA
+      start_date: '2016'
+      end_date: '2018'
+      location: Wilmington, NC
+      highlights:
+      - Applied Statistics Graduate Certificate
+    - institution: Alamance Community College
+      area: Spanish Language
+      degree: Cert.
+      start_date: '2014'
+      end_date: '2016'
+      location: Graham, NC
+    - institution: Elon University
+      area: Psychology
+      degree: BA
+      start_date: '2009'
+      end_date: '2013'
+      location: Elon, NC
+    research_funding:
+    - name: "**Provost's Challenge Research Seed Fund (PI)**, Arkansas State University"
+      start_date: '2024'
+      end_date: present
+      summary: '*Innovations in Reading Research: Eye-Tracking and Brain Imaging Solutions for Struggling Readers*. $60,000.'
+    journal_articles:
+    - reversed_number: Mohamed, N., Hernandez Moran, A., Norman, J., Espinosa-Hernandez, G. M., Hollander, J., & Fountain, C. (2026). Religiosity and sexual intentions among Mexican Catholic adolescents. *Sexuality & Culture*, 1-18.
+    - reversed_number: Hollander, J.†, Fountain, C.†, Mohamed, N. A.†, & Espinosa-Hernandez, G.† (2025). The role of parental psychological control in domain-specific self-esteem among Mexican adolescents. *Cultural Diversity and Ethnic Minority Psychology*.
+    - reversed_number: Zhang, L., Lin, J., Sabatini, J., Borchers, C., Weitekamp, D., Cao, M., Hollander, J., Hu, X., & Graesser, A. C. (2025). Data augmentation for sparse multidimensional learning performance data using generative AI. *IEEE Transactions on Learning Technologies*, 18, 145-164.
+    - reversed_number: 'Hollander, J., & Olney, A. (2024). Raising the roof: Situating verbs in symbolic and embodied language processing. *Cognitive Science*, 48(4), e13442.'
+    - reversed_number: Hollander, J., Sabatini, J., Graesser, A., Greenberg, D., O'Reilly, T., & Frijters, J. (2023). Importance of learner characteristics in intelligent tutoring for adult literacy. *Discourse Processes*, 60(4-5), 397-409.
+    - reversed_number: Sabatini, J., Graesser, A., Hollander, J., & O'Reilly, T. (2023). A framework of literacy development and how AI can transform theory and practice. *British Journal of Educational Technology*, 54(5), 1174-1203.
+    - reversed_number: 'Hollander, J., & Dark-Freudeman, A. (2023). Psycholinguistic, Stroop, and self-report measurements of death anxiety: A study of convergent validity. *Death Studies*, 47(10), 1075-1081.'
+    - reversed_number: Hollander, J., & Huette, S. (2022). Extracting blinks from continuous eye-tracking data in a mind wandering paradigm. *Consciousness and Cognition*, 100.
+    - reversed_number: Smith, E. H., Hollander, J., Graesser, A., Sabatini, J., & Hu, X. (2021). Integrating SARA assessment with reading comprehension training in AutoTutor. *English Teaching*, 76(1), 17-29.
+    - reversed_number: Hollander, J., Sabatini, J., & Graesser, A. (2021). An intelligent tutoring system for improving adult literacy skills in digital environments. *Coalition for Adult Basic Education Journal*, 10(2), 59-64.
+    - reversed_number: 'Dark-Freudeman, A., Terry, C., Fleming, J., Hollander, J., & Bensadon, B. (2020). Planning in advance: Exploring end-of-life hopes and fears among healthy young people. *Mortality*, 26(3), 1-10.'
+    - reversed_number: 'Lecci, L., Hollander, J., Key, D., & Keith, J. (2018). Concussion management in urgent care: A primer for implementation. *The Journal of Urgent Care Medicine*, 12(9), 33-40.'
+    conference_publications:
+    - reversed_number: Hollander, J., & Copping, B. (2026). Modeling the role of cognitive constraints and allowances in the evolution of language complexity. Submitted to the Annual Meeting of the Cognitive Science Society.
+    - reversed_number: Jain, Y., Hollander, J., He, A., Tang, S., Zhang, L., & Sabatini, J. (2025). Exploring the potential of large language models for estimating the reading comprehension question difficulty. In R. A. Sottilare & J. Schwarz (Eds.), *Adaptive Instructional Systems. HCII 2025. Lecture Notes in Computer Science*, vol. 15812. Springer, Cham.
+    - reversed_number: 'Zhang, L., Lin, J., Borchers, C., Sabatini, J., Hollander, J., Cao, M., & Hu, X. (2024). Predicting learning performance with large language models: A study in adult literacy. In R. A. Sottilare & J. Schwarz (Eds.), *Adaptive Instructional Systems. HCII 2024. Lecture Notes in Computer Science* (pp. 333-353). Springer Nature Switzerland. [Winner of Best Paper Award]'
+    - reversed_number: 'Sabatini, J., & Hollander, J. (2023). Using simple text mining tools to power an intelligent learning system for lengthy, domain specific texts. In *Lecture Notes in Artificial Intelligence: Proceedings of the 24th International Conference on Artificial Intelligence in Education* (AIED 2023), 727-733. [Nominated for Best Poster Award]'
+    - reversed_number: 'Hollander, J., Sabatini, J., & Graesser, A. (2022). How item and learner characteristics matter in intelligent tutoring systems data. In *Lecture Notes in Artificial Intelligence: Proceedings of the 23rd International Conference on Artificial Intelligence in Education* (AIED 2022), 520-523.'
+    - reversed_number: Hasan, M., Deng, L., Sabatini, J., Bowman, D., Yang, C., & Hollander, J. (2022). Effect of Q-matrix misspecification on variational autoencoders (VAE) for multidimensional item response theory (MIRT) models estimation. In *Proceedings of the 15th Conference on Educational Data Mining* (EDM 2022), Doctoral Consortium Track, 811-816.
+    manuscripts:
+    - bullet: 'Heath, D., Hollander, J., & Huette, S. (In revision). The role of prior conceptual knowledge and statistical regularities in second language learning: Insights from artificial language tasks. Under review in *Language and Cognition*.'
+    - bullet: 'Dark-Freudeman, A., Espinosa-Hernandez, G., Pond, R., & Hollander, J. (In revision). Possible selves, self-regulatory beliefs, and academic performance in Mexican adolescents: A mixed-methods study. In revision in *Self and Identity*.'
+    - bullet: 'Hollander, J., Sanders, Z., Johnson, A., & Huette, S. (Under review). Instrumentle: A game based measurement of auditory pattern recognition using popular music. Under review in *Music Perception*.'
+    - bullet: Hollander, J., Henson, B., Jackson, J., & Huette, S. (Under review). Spoken brand discourse features and audience engagement on TikTok. Under review in *Discourse Processes*.
+    teaching:
+    - name: '**Assistant Professor**, Arkansas State University'
+      start_date: '2024'
+      end_date: present
+      highlights:
+      - Introduction to Psychology
+      - Cognitive Psychology
+      - Experimental Psychology
+      - Introduction to Neuroscience
+      - Learning Processes
+      - Psychology of Language Seminar
+      - Foundations in Cognitive Psychology (graduate)
+    - name: '**Instructor of Record**, University of Memphis'
+      highlights:
+      - Research Methods and Statistics I (PSYC 3010)
+    - name: '**Graduate Teaching Assistant**, University of North Carolina Wilmington'
+      highlights:
+      - Research Methods and Statistics for Social Sciences
+    awards:
+    - name: Cognitive Science Society, Cog Sci Mind Challenge '25 Finalist
+      date: '2025'
+    - name: Society for Text & Discourse, Jason Albrecht Outstanding Young Scientist Award
+      date: '2025'
+    - name: Cognitive Science Society, Cog Sci Mind Challenge '24 Finalist
+      date: '2024'
+    - name: University of Memphis IISSO Dissertation Award
+      date: '2024'
+    - name: Cognitive Science Society, Cog Sci Mind Challenge '23 Finalist
+      date: '2023'
+    - name: Society for Computation in Psychology, John Castellan Student Paper Award
+      date: '2023'
+    - name: University of Memphis NEDxStudents, Best Presentation
+      date: '2023'
+    - name: University of Memphis Student Research Forum, Best Poster (2nd Place)
+      date: '2023'
+    - name: Conference on Artificial Intelligence in Education, Best Poster (nominee)
+      date: '2023'
+    presentations:
+    - reversed_number: Hollander, J., Henson, B., Jackson, J., & Huette, S. (2026, Jul.). *Psycholinguistic predictors of engagement in brand discourse on TikTok*. Presented at the annual meeting of the Society for Text and Discourse.
+    - reversed_number: Hollander, J., Dye, P., Weathers, K., & Polsgrove, L. (2026, Mar.). *Recognition versus recall in a musical pattern recognition game*. Poster presented at the annual meeting of the Southeastern Psychological Association.
+    - reversed_number: Johnson, A., Kain, D., Polsgrove, L., & Hollander, J. (2026, Mar.). *EEG correlates of aphantasia and subjective vividness across internal modalities*. Poster presented at the annual meeting of the Southeastern Psychological Association.
+    - reversed_number: 'Hollander, J., Sanders, Z., Johnson, A., & Huette, S. (2025, Nov.). *Instrumentle: A game-based paradigm for the assessment of music cognition*. Spoken presentation at the annual meeting of the Society for Computation in Psychology.'
+    - reversed_number: 'Johnson, A., & Hollander, J. (2025, Nov.). *Multimodal imagery and artistic experience: Exploring individual differences in internal sensory vividness*. Poster presented at the annual meeting of the Society for Computation in Psychology.'
+    - reversed_number: Sanders, Z., & Hollander, J. (2025, Nov.). *Cross-developmental analysis of EEG and fMRI signals during emotional working memory tasks*. Poster presented at the annual meeting of the Psychonomic Society.
+    - reversed_number: Hollander, J. (2025, Jul.). *Evaluating sensorimotor knowledge in large language models*. Poster presented at the annual meeting of the Cognitive Science Society.
+    - reversed_number: Sabatini, J., O'Reilly, T., Wang, Z., & Hollander, J. (2025, Jul.). *What is reading fluency/efficiency for college students?* Spoken presentation at the 35th Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: Hollander, J. (2025, Jul.). *How first language grounded representations influence novel word processing*. Archived paper presented at the 35th Annual Meeting of the Society for Text and Discourse. [Winner of the Jason Albrecht Outstanding Young Scientist Award]
+    - reversed_number: 'Johnson, A., Sanders, Z., & Hollander, J. (2025, Jul.). *The best @#$%&! story ever: Extreme language''s effects on textual memory*. Poster presented at the 35th Annual Meeting of the Society for Text and Discourse.'
+    - reversed_number: Sanders, Z., Hollander, J., & Huette, S. (2025, Apr.). *How musical skills and expertise aid auditory recognition and retrieval*. Poster presented at the annual meeting of the Southwestern Psychological Association.
+    - reversed_number: Sanders, Z., Hollander, J., & Huette, S. (2025, Mar.). *Musical sophistication, exposure, and pattern recognition in popular music*. Poster presented at the annual meeting of the Southeastern Psychological Association.
+    - reversed_number: Sabatini, J., Hollander, J., Weeks, J., & O'Reilly, T. (2024, Jul.). *Comparing assessment properties of component reading tests in adolescent versus adult learners*. Talk presented at the 14th Annual Meeting of the Society for the Scientific Study of Reading.
+    - reversed_number: Sabatini, J., Jones, E., & Hollander, J. (2024, Jul.). *An application of differential item functioning to an adolescent assessment adapted for adult learners*. Talk presented at the 2024 International Test Commission Conference.
+    - reversed_number: Hollander, J., Sabatini, J., & O'Reilly, T. (2024, Jul.). *The relation of foundational skills to comprehension in adolescent readers*. Talk presented at the 34th Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: 'Sabatini, J., Hollander, J., & Feller, D. (2024, Jul.). *Fans of SARA: Exploring reading skill profiles of at-risk college students*. Talk presented at the 34th Annual Meeting of the Society for Text and Discourse.'
+    - reversed_number: Feller, D., Hollander, J., Magliano, J., Allen, L., & Sabatini, J. (2024, Jul.). *Lexical sophistication, reading strategies, and reading comprehension*. Talk presented at the 34th Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: Hollander, J., & Olney, A. (2023, Nov.). *Embodying verbs with a database of 3-D motion norms*. Talk and paper presented at the 53rd Annual Meeting of the Society for Computation in Psychology. [Winner of the John Castellan Student Paper Award]
+    - reversed_number: Sabatini, J., Hollander, J., O'Reilly, T., & Smith, E. H. (2023, Jul.). *The relation of reading components to comprehension in college students*. Talk presented at the 13th Annual Meeting of the Society for the Scientific Study of Reading.
+    - reversed_number: Hollander, J., & Olney, A. (2023, Jul.). *The spatial role of verbs in embodied language processing*. Poster presented at the 45th Annual Meeting of the Cognitive Science Society.
+    - reversed_number: Hollander, J., & Sabatini, J. (2023, Jul.). *Text mining the contents of an intelligent tutoring system*. Talk presented at the 33rd Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: 'Sabatini, J., Hollander, J., Feller, D., O''Reilly, T., & Nelson, T. (2023, Jul.). *Removing hidden barriers: Efficiently identifying potentially at-risk college students*. Talk presented at the 33rd Annual Meeting of the Society for Text and Discourse.'
+    - reversed_number: 'Sabatini, J., Carmon, C., Graesser, A., Hollander, J., & Smith, E. H. (2023, Apr.). *Interrogating assumptions to pursue truth: Research that reframes how we talk about and teach readers*. Talk presented at the Annual Meeting of the American Educational Research Association.'
+    - reversed_number: Hollander, J., Sabatini, J., & O'Reilly, T. (2023, Apr.). *The reading skills bottleneck across middle grades*. Poster presented at the Annual Meeting of the American Educational Research Association.
+    - reversed_number: Hollander, J., & Olney, A. M. (2022, Nov.). *Toward a lexical database of embodied information of verbs*. Talk presented at the 52nd Annual Meeting of the Society for Computation in Psychology.
+    - reversed_number: Hollander, J., Sabatini, J., & Graesser, A. (2022, Sep.). *Connecting assessment and learning in the inner loop*. Talk presented at the 8th Meeting of the International Association for Computerized Adaptive Testing.
+    - reversed_number: 'Hu, X., Sabatini, J., Graesser, A., & Hollander, J. (2022, Sep.). *Designing innovative tasks and test environments: Opportunities and challenges in connecting assessment and instruction*. Talk presented at the 8th Meeting of the International Association for Computerized Adaptive Testing.'
+    - reversed_number: 'Graesser, A., Hu, X., Sabatini, J., & Hollander, J. (2022, Sep.). *AutoTutor for adult reading comprehension: An intelligent tutoring system*. Talk presented at the 8th Meeting of the International Association for Computerized Adaptive Testing.'
+    - reversed_number: Hollander, J., Sabatini, J., Graesser, A., Greenberg, D., O'Reilly, T., & Frijters, J. (2022, Jul.). *Foundational reading skills and learner characteristics in an adult literacy intervention*. Presented at the 32nd Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: Sabatini, J., Hollander, J., Graesser, A., & O'Reilly, T. (2022, Jul.). *How lexical properties of test items impact adolescent and adult learner text processing*. Presented at the 32nd Annual Meeting of the Society for Text and Discourse.
+    - reversed_number: Hollander, J., Sabatini, J., Smith, E. H., & O'Reilly, T. (2022, Jul.). *Item-level differences for adults in reading component skill assessments*. Presented at the 12th Annual Meeting of the Society for the Scientific Study of Reading.
+    - reversed_number: Sabatini, J., Hollander, J., Smith, E. H., & O'Reilly, T. (2022, Jul.). *The relation of reading components to comprehension in adult education students*. Presented at the 12th Annual Meeting of the Society for the Scientific Study of Reading.
+    - reversed_number: Hollander, J., Sabatini, J., O'Reilly, T., & Wang, Z. (2022, Apr.). *A middle-grade level trajectory of reading component skills*. Presented at the Annual Meeting of the American Educational Research Association.
+    - reversed_number: Sabatini, J., Hollander, J., & O'Reilly, T. (2022, Apr.). *Comparing foundational skills of adolescents to adult learners*. Presented at the Annual Meeting of the American Educational Research Association.
+    - reversed_number: 'Sabatini, J., Hollander, J., Smith, E. H., & Graesser, A. C. (2022, Apr.). *Digital resources for adult literacy learners and programs: Reading, comprehension, and assessment tools*. COABE National Conference 2022, Seattle, WA.'
+    - reversed_number: Hollander, J., & Olney, A. M. (2021, Nov.). *A tool for "keeping it maximal" with linear mixed-effects models*. Presented at the 51st Annual Meeting of the Society for Computation in Psychology.
+    - reversed_number: Hasan, M., Bowman, D., Deng, L., Yang, C., Sabatini, J., & Hollander, J. (2021, Nov.). *Q-matrix and variational autoencoders to estimate multidimensional item response theory models with correlated and independent latent variables*. Presented at the Western Tennessee Chapter of the American Statistical Association Annual Meeting.
+    - reversed_number: Hollander, J., Sabatini, J., Talwar, A., & Magliano, J. (2021, Aug.). *Component skill and metacognitive differences between traditional and scenario-based comprehension assessments*. Presented at the 31st Annual Meeting of the Society for Text & Discourse.
+    - reversed_number: Sabatini, J., Hollander, J., Magliano, J., & Talwar, A. (2021, Aug.). *Relation of reading motivation to reading comprehension performance*. Presented at the 31st Annual Meeting of the Society for Text & Discourse.
+    - reversed_number: Hollander, J., & Olney, A. (2021, Jul.). *Vertical directionality ratings as lexical norms for verbs*. Presented at the 43rd Annual Meeting of the Cognitive Science Society.
+    - reversed_number: Hollander, J., & Sabatini, J. (2021, Jul.). *Decoding error differences in child and adult readers*. Presented at the 28th Annual Meeting of the Society for the Scientific Study of Reading.
+    - reversed_number: Hollander, J., Sabatini, J., & Smith, E. H. (2021, Mar.). *Learning literacy with an intelligent tutoring aid*. Presented at the Outreach and Technical Assistance Network's Technology and Distance Learning Symposium.
+    - reversed_number: Sabatini, J., Smith, E. H., & Hollander, J. (2021, Mar.). *Remotely assessing, supporting, & diagnosing adult learners' literacy skills*. Presented at the Outreach and Technical Assistance Network's Technology and Distance Learning Symposium.
+    - reversed_number: 'Hollander, J., & Olney, A. (2020, Nov.). *Testing symbolic and embodied language comprehension: Words in motion*. Presented at the 50th Annual Meeting of the Society for Computation in Psychology.'
+    - reversed_number: 'Hollander, J., & Huette, S. (2019, Nov.). *Blink duration and gradient cognitive disengagement: Extracting eye blink events from noisy data*. Spoken presentation at the 49th Annual Meeting of the Society for Computation in Psychology, Montreal, QC.'
+    - reversed_number: Hollander, J., & Huette, S. (2019). *Negation mediates semantic representations in an artificial language paradigm*. Poster presented at the 31st Annual Association for Psychological Science Convention, Washington, DC.
+    - reversed_number: 'Huette, S., & Hollander, J. (2019). *The interaction of image salience with language: How much is language driving eye-movements in visual world paradigms?* Poster presented at the 32nd Annual CUNY Conference on Sentence Processing, Boulder, CO.'
+    - reversed_number: Hollander, J. (2019). *Comparing implicit and explicit measures of death anxiety*. Poster presented at the 41st Annual Association for Death Education and Counseling Conference, Atlanta, GA.
+    - reversed_number: Hollander, J., Matney, R., & Espinosa-Hernandez, G. (2018). *The influence of parental psychological control and gender on the sexual behavior of Mexican adolescents*. Spoken presentation at the Society for the Scientific Study of Sexuality Annual Meeting, Montreal, QC.
+    - reversed_number: 'Hollander, J., Terry, C., Jones, C., & Dark-Freudeman, A. (2017). *Possible selves: An exploration of death fears*. Poster presented at the 125th Annual American Psychological Association Convention, Washington, DC.'
+    - reversed_number: 'Terry, C. R., Dark-Freudeman, A., Dorsey, K. R., & Hollander, J. M. (2017). *Death memory narratives and meaning making: A qualitative study*. Poster presented at the 39th Association for Death Education and Counseling Conference, Portland, OR.'
+    - reversed_number: Dorsey, K. R., Terry, C. R., Dark-Freudeman, A., & Hollander, J. (2017). *Death memories, meaning making, & death anxiety*. Poster presented at the 39th Association for Death Education and Counseling Conference, Portland, OR.
+    - reversed_number: 'Hollander, J., D''Antuono, H., Corbett, T., & Tarantiles, C. (2013). *Linguistic relativity: Writing and editing of bilingual students*. Poster presented at the 2013 National Conference on Undergraduate Research, La Crosse, WI.'
+    - reversed_number: 'Hollander, J., D''Antuono, H., Corbett, T., & Tarantiles, C. (2013). *Linguistic relativity: Writing and editing of bilingual students*. Poster presented at the 2013 Carolinas Psychology Conference, Raleigh, NC.'
+    - reversed_number: 'Hollander, J., D''Antuono, H., Corbett, T., & Tarantiles, C. (2013). *Linguistic relativity: Writing and editing of bilingual students*. Spoken presentation at the Elon University Student Undergraduate Research Forum.'
+    - reversed_number: 'Epting, L. K., Hignight, A., Bowers, C., Cox, J., D''Antuono, H., & Hollander, J. (2012). *Tough love or glowing review: Effects of audience and feedback on self-editing in writing*. Poster presented at the Association for Behavior Analysis International Annual Conference, Seattle, WA.'
+    - reversed_number: 'Epting, L. K., Hignight, A., Bowers, C., Cox, J., D''Antuono, H., & Hollander, J. (2012). *Tough love or glowing review: Effects of audience and feedback on self-editing in writing*. Spoken presentation at the Elon University Student Undergraduate Research Forum, Elon, NC.'
+    - reversed_number: 'Epting, L. K., Hignight, A., Bowers, C., Cox, J., D''Antuono, H., & Hollander, J. (2012). *Tough love or glowing review: Effects of audience and feedback on self-editing in writing*. Poster presented at the Southeastern Psychological Association Annual Conference, New Orleans, LA.'
+    invited_talks:
+    - bullet: Hollander, J. (2026, Oct.). *Psycholinguistic markers can reveal what we feel, what we share, and how we connect*. Invited session at the Mississippi State University Cognitive Science Colloquium.
+    - bullet: Hollander, J., Sabatini, J., & Smith, E. H. (Monthly, March 2021 - June 2022). *AutoTutor - Adult Reading Comprehension*. Invited session at Literacy Mid-South New Volunteer Training.
+    - bullet: Hollander, J., Sabatini, J., & Smith, E. H. (2022, Mar.). *AutoTutor - Adult Reading Comprehension*. Presented at the Florida Literacy Coalition annual meeting.
+    - bullet: 'Sabatini, J. P., Hollander, J. M., & Smith, H. (2021, Jun.). *Digital resources for adult literacy learners and programs: Reading, comprehension, and assessment tools*. Webinar presented at the LINCS Community for Adult Educators.'
+    - bullet: Hollander, J. (2020, Oct.). *Eye tracking in the psychology of language*. Presented at the 2020 IISSO Eye Tracking Workshop, Memphis, TN.
+    service:
+    - label: Steering Committee
+      details: Society for Computation in Psychology (2025 - present)
+    - label: Program Committee
+      details: Cognitive Science Society conference (2024, 2025, 2026); Intelligent Tutoring Systems conference (2024)
+    - label: Memberships
+      details: Society for Computation in Psychology; Cognitive Science Society; Society for Text and Discourse; Society for the Scientific Study of Reading; International Artificial Intelligence in Education Society; Psychonomic Society; Southeastern Psychological Association
+    - label: Ad hoc reviewer
+      details: Adult Education Quarterly; Artificial Intelligence in Education (conference); Cognition; Cognitive Science (conference and journal); Displays; Educational Data Mining (conference); Frontiers in Psychology; IEEE Transactions on Knowledge and Data Engineering; IEEE Transactions on Learning Technologies; Journal of Speech, Language, and Hearing Research; Psychological Science; Scientific Reports; Social Sciences and Humanities Open
+    skills:
+    - label: Experiment building
+      details: E-Prime, Inquisit, jsPsych, lab.js, Psychtoolbox, Qualtrics
+    - label: Programming and markup
+      details: Python, R, Matlab, HTML, Markdown
+    - label: Text and data processing
+      details: pandas, tidyverse, spaCy, NVivo
+    - label: Statistics
+      details: R, Mplus, SAS, SPSS
+    - label: Audiovisual
+      details: Ableton, Audacity, Adobe Captivate, Adobe Premiere, DaVinci Resolve, Praat, Reaper
+    - label: Eye-tracking and EEG
+      details: EyeLink, Tobii, Emotiv
+    press:
+    - bullet: '"How do different minds learn language, if at all?" (Video). *Cognitive Science Society*, Cog Sci Mind Challenge Finalist, 2025. [Watch](https://www.youtube.com/watch?v=CnSj11_Mdw8)'
+    - bullet: '"Why do our memories sometimes fade or fail?" (Video). *Cognitive Science Society*, Cog Sci Mind Challenge Finalist, 2024. [Watch](https://www.youtube.com/watch?v=6FUkEb_G8QQ)'
+    - bullet: '"Why are there so many languages?" (Video). *Cognitive Science Society*, Cog Sci Mind Challenge Finalist, 2023. [Watch](https://www.youtube.com/watch?v=xXlSa6TcZmw)'
+    - bullet: '"Meet the Author: John Hollander, John Sabatini, and Art Graesser" (Video interview). *Coalition for Adult Basic Education*, 2021. [Watch](https://youtu.be/474--9qVCAA)'
+    - bullet: '"Peace of Mind: UNCW''s brainpower is helping revolutionize concussion management" (Magazine article). *UNCW Magazine*, 2017. [Read](https://issuu.com/uncwmagazine/docs/uncw_mag_fall_winter_2017/16)'

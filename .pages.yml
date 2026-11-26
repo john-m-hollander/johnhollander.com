@@ -1,0 +1,266 @@
+# Pages CMS configuration (https://pagescms.org).
+# Gives a form-based editor for the CV at https://app.pagescms.org.
+# Every save is a normal commit, so the site and PDF rebuild automatically.
+# Section keys here must match the keys in _data/cv.yaml and _data/cv_titles.yml.
+content:
+- name: cv
+  label: CV
+  type: file
+  path: _data/cv.yaml
+  format: yaml
+  fields:
+  - name: cv
+    label: false
+    type: object
+    fields:
+    - name: name
+      label: Name
+      type: string
+    - name: headline
+      label: Headline
+      type: string
+    - name: location
+      label: Location
+      type: string
+    - name: email
+      label: Email
+      type: string
+    - name: website
+      label: Website
+      type: string
+    - name: social_networks
+      label: Profiles
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{network}'
+      fields:
+      - name: network
+        label: Network
+        type: string
+        description: e.g. ORCID, Google Scholar, GitHub, LinkedIn
+      - name: username
+        label: Username or ID
+        type: string
+    - name: sections
+      label: Sections
+      type: object
+      fields:
+      - name: experience
+        label: Professional Experience
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{position}, {company}'
+        fields:
+        - name: position
+          label: Position
+          type: string
+        - name: company
+          label: Institution
+          type: string
+        - name: location
+          label: Location
+          type: string
+        - &id001
+          name: start_date
+          label: Start year
+          type: string
+          description: e.g. 2024
+        - &id002
+          name: end_date
+          label: End year
+          type: string
+          description: A year, or "present"
+        - &id003
+          name: highlights
+          label: Bullet points
+          type: string
+          list: true
+      - name: education
+        label: Education
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{degree}, {institution}'
+        fields:
+        - name: degree
+          label: Degree
+          type: string
+          description: e.g. PhD
+        - name: area
+          label: Field
+          type: string
+        - name: institution
+          label: Institution
+          type: string
+        - name: location
+          label: Location
+          type: string
+        - *id001
+        - *id002
+        - *id003
+      - name: research_funding
+        label: Research Funding
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{name}'
+        fields:
+        - name: name
+          label: Award name
+          type: string
+          description: Wrap the main part in **double asterisks** to bold it.
+        - *id001
+        - *id002
+        - name: summary
+          label: Details
+          type: text
+      - name: journal_articles
+        label: Refereed Journal Articles
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{reversed_number}'
+        description: 'Newest first: add a new item, then drag it to the top. Numbers are automatic.'
+        fields:
+        - name: reversed_number
+          label: Citation
+          type: text
+          description: Full citation. Use *asterisks* for italics. Your name is bolded automatically.
+      - name: conference_publications
+        label: Refereed Conference Publications
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{reversed_number}'
+        description: 'Newest first: add a new item, then drag it to the top. Numbers are automatic.'
+        fields:
+        - name: reversed_number
+          label: Citation
+          type: text
+          description: Full citation. Use *asterisks* for italics. Your name is bolded automatically.
+      - name: manuscripts
+        label: Manuscripts Under Review and In Preparation
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{bullet}'
+        description: 'Newest first: drag new items to the top.'
+        fields:
+        - name: bullet
+          label: Citation
+          type: text
+          description: Use *asterisks* for italics and [text](https://link) for links.
+      - name: teaching
+        label: Teaching Experience
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{name}'
+        fields:
+        - name: name
+          label: Role and institution
+          type: string
+          description: e.g. **Assistant Professor**, Arkansas State University
+        - *id001
+        - *id002
+        - name: highlights
+          label: Courses
+          type: string
+          list: true
+      - name: awards
+        label: Prizes, Awards, and Honors
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{date}: {name}'
+        description: 'Newest first: drag new items to the top.'
+        fields:
+        - name: name
+          label: Award
+          type: string
+        - name: date
+          label: Year
+          type: string
+      - name: presentations
+        label: Conference Presentations and Posters
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{reversed_number}'
+        description: 'Newest first: add a new item, then drag it to the top. Numbers are automatic.'
+        fields:
+        - name: reversed_number
+          label: Citation
+          type: text
+          description: Full citation. Use *asterisks* for italics. Your name is bolded automatically.
+      - name: invited_talks
+        label: Invited Talks, Trainings, and Workshops
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{bullet}'
+        description: 'Newest first: drag new items to the top.'
+        fields:
+        - name: bullet
+          label: Citation
+          type: text
+          description: Use *asterisks* for italics and [text](https://link) for links.
+      - name: service
+        label: Service and Professional Activities
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{label}'
+        fields:
+        - name: label
+          label: Category
+          type: string
+          description: e.g. Ad hoc reviewer
+        - name: details
+          label: Details
+          type: text
+      - name: skills
+        label: Technical Skills
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{label}'
+        fields:
+        - name: label
+          label: Category
+          type: string
+        - name: details
+          label: Details
+          type: text
+      - name: press
+        label: Press and Media
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: '{bullet}'
+        description: 'Newest first: drag new items to the top.'
+        fields:
+        - name: bullet
+          label: Citation
+          type: text
+          description: Use *asterisks* for italics and [text](https://link) for links.
+- name: journal
+  label: CV journal (one line per update)
+  type: file
+  path: cv/CHANGELOG.md

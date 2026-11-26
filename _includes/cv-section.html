@@ -1,0 +1,45 @@
+{%- comment -%}
+  Renders one section of _data/cv.yaml (the same file that builds the PDF).
+  Usage: {% include cv-section.html name="journal_articles" heading=true %}
+  (name is the key in _data/cv.yaml; its heading comes from _data/cv_titles.yml)
+{%- endcomment -%}
+{%- assign entries = site.data.cv.cv.sections[include.name] -%}
+{%- assign section_title = site.data.cv_titles[include.name] | default: include.name -%}
+{%- if entries and entries.size > 0 -%}
+{%- if include.heading -%}<h2 id="{{ section_title | slugify }}">{{ section_title }}</h2>{%- endif -%}
+{%- assign first = entries[0] -%}
+{%- if first.reversed_number -%}
+<ol class="cv-list" reversed>
+{%- for e in entries %}<li>{% include cv-text.html text=e.reversed_number %}</li>{% endfor %}
+</ol>
+{%- elsif first.number -%}
+<ol class="cv-list">
+{%- for e in entries %}<li>{% include cv-text.html text=e.number %}</li>{% endfor %}
+</ol>
+{%- elsif first.bullet -%}
+<ul class="cv-list">
+{%- for e in entries %}<li>{% include cv-text.html text=e.bullet %}</li>{% endfor %}
+</ul>
+{%- elsif first.label -%}
+<ul class="cv-list cv-oneline">
+{%- for e in entries %}<li><strong>{{ e.label }}:</strong> {% include cv-text.html text=e.details %}</li>{% endfor %}
+</ul>
+{%- else -%}
+<div class="cv-entries">
+{%- for e in entries -%}
+  {%- if e.institution -%}
+    {%- capture title -%}<strong>{{ e.degree }}, {{ e.area }}</strong>, {{ e.institution }}{%- endcapture -%}
+  {%- elsif e.company -%}
+    {%- capture title -%}<strong>{{ e.position }}</strong>, {{ e.company }}{%- endcapture -%}
+  {%- else -%}
+    {%- capture title -%}{% include cv-text.html text=e.name %}{%- endcapture -%}
+  {%- endif -%}
+  <div class="cv-entry">
+    <div class="cv-entry__head"><span class="cv-entry__title">{{ title }}</span> <span class="cv-entry__date">{% include cv-dates.html entry=e %}</span></div>
+    {%- if e.summary -%}<div class="cv-entry__summary">{% include cv-text.html text=e.summary %}</div>{%- endif -%}
+    {%- if e.highlights -%}<ul>{% for h in e.highlights %}<li>{% include cv-text.html text=h %}</li>{% endfor %}</ul>{%- endif -%}
+  </div>
+{%- endfor -%}
+</div>
+{%- endif -%}
+{%- endif -%}
